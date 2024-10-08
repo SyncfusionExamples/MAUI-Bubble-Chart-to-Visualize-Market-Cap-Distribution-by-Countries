@@ -16,6 +16,8 @@ Syncfusion charts provide robust options for customizing [tooltips](https://help
 ### Customizing the Series
 The Syncfusion [MAUI Bubble Chart](https://help.syncfusion.com/maui/cartesian-charts/bubble) offers extensive customization options for series representation, allowing developers to tailor the visual aspects of the chart to better convey data insights. One notable feature is the ability to incorporate images within the bubble segments, enhancing the chart's interactivity and visual appeal.
 
+After executing these code examples, we will get the output that resembles the following image.
+![Presentation_bubble](https://github.com/user-attachments/assets/75c60a13-1a3a-47a6-aac9-0699afbec967)
 
 ## Troubleshooting
 Path too long exception
