@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Syncfusion.Maui.Charts;assembly=Syncfusion.Maui.Charts"
+             xmlns:model="clr-namespace:MarketCap"
+             x:Class="MarketCap.MainPage">
+
+    <Border Margin="25" Padding="{OnPlatform Default=8, Android=7,iOS=7}" StrokeThickness="3" Stroke="Gray" StrokeShape="RoundRectangle 15">
+        <chart:SfCartesianChart   HorizontalOptions="Fill"  VerticalOptions="FillAndExpand"  >
+            <chart:SfCartesianChart.Title>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="{OnPlatform Android=68,Default=80,iOS=68}"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="55"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Path   Data="M3.2999878,20.999992L3.2999878,31.099993 0,31.099993 0,24.300009z M7.4000244,16.900018L7.4000244,31.099993 4.0999756,31.099993 4.0999756,20.30001z M16.400024,16.499994L18.599976,18.700004 19.700012,17.599998 19.700012,31.099993 16.400024,31.099993z M23.799988,13.600001L23.799988,31.199999 20.5,31.199999 20.5,16.900018z M11.5,12.800013L11.5,31.099993 8.2000122,31.099993 8.2000122,16.1z M12.299988,12.400019L15.599976,15.700006 15.599976,31.099993 12.299988,31.099993z M27.900024,9.499996L27.900024,31.199999 24.599976,31.199999 24.599976,12.800013z M28.700012,9.1000021L29,9.1000021 32,12.100001 32,31.099993 28.700012,31.099993z M31.400024,0L31.099976,7.2000096 28.900024,4.9999983 18.200012,15.700006 17.900024,15.999993 11.700012,9.8000143 0.70001221,20.80001 0.70001221,15.800012 11.599976,4.8000167 17.900024,11.100002 26.400024,2.6000052 24.200012,0.4000244z"   Fill="#FF000000"   Margin="10,15,10,0"  >
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <TransformGroup.Children>
+                                    <RotateTransform Angle="0" />
+                                    <ScaleTransform ScaleX="1" ScaleY="1" />
+                                </TransformGroup.Children>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                    <StackLayout Grid.Column="1" Grid.Row="0" Margin="7,7,0,0">
+                        <Label Text="Visualizing Country GDP and Market Cap Through Public Companies" FontSize="{OnPlatform Android=12,Default=20,iOS=12}" FontAttributes="Bold" TextColor="Black"/>
+                        <Label Text="Detailed Analysis Highlighting Market Capitalization, GDP, and the Number of Publicly Listed Companies" FontSize="{OnPlatform Android=10,Default=16,iOS=10}" TextColor="Black" Margin="0,2,0,0"/>
+                    </StackLayout>
+                </Grid>
+            </chart:SfCartesianChart.Title>
+
+            <chart:SfCartesianChart.BindingContext>
+                <model:MarketCapViewModel/>
+            </chart:SfCartesianChart.BindingContext>
+
+            <chart:SfCartesianChart.TooltipBehavior>
+                <chart:ChartTooltipBehavior/>
+            </chart:SfCartesianChart.TooltipBehavior>
+            <chart:SfCartesianChart.XAxes>
+                <chart:NumericalAxis  Minimum="0" Maximum="400" ShowMajorGridLines="False">
+                    <chart:NumericalAxis.Title>
+                        <chart:ChartAxisTitle Text="Countries GDP Levels"/>
+                    </chart:NumericalAxis.Title>
+                    <chart:NumericalAxis.LabelStyle>
+                        <chart:ChartAxisLabelStyle TextColor="Black"/>
+                    </chart:NumericalAxis.LabelStyle>
+                    <chart:NumericalAxis.AxisLineStyle>
+                        <chart:ChartLineStyle Stroke="black"/>
+                    </chart:NumericalAxis.AxisLineStyle>
+                    <chart:NumericalAxis.MajorTickStyle>
+                        <chart:ChartAxisTickStyle Stroke="black"/>
+                    </chart:NumericalAxis.MajorTickStyle>
+                </chart:NumericalAxis>
+            </chart:SfCartesianChart.XAxes>
+
+            <chart:SfCartesianChart.YAxes>
+                <chart:NumericalAxis Minimum="0" Maximum="6000" Interval="1000"  ShowMajorGridLines="False" LabelCreated="OnLabelCreated" PlotOffsetStart="10">
+                    <chart:NumericalAxis.Title>
+                        <chart:ChartAxisTitle Text="No of Companies"/>
+                    </chart:NumericalAxis.Title>
+                    <chart:NumericalAxis.LabelStyle>
+                        <chart:ChartAxisLabelStyle TextColor="Black"/>
+                    </chart:NumericalAxis.LabelStyle>
+                    <chart:NumericalAxis.AxisLineStyle>
+                        <chart:ChartLineStyle Stroke="black"/>
+                    </chart:NumericalAxis.AxisLineStyle>
+                    <chart:NumericalAxis.MajorTickStyle>
+                        <chart:ChartAxisTickStyle Stroke="black"/>
+                    </chart:NumericalAxis.MajorTickStyle>
+                </chart:NumericalAxis>
+            </chart:SfCartesianChart.YAxes>
+
+            <model:BubbleExt XBindingPath="Gdp"  MaximumRadius="{OnPlatform Android=28, Default=50, iOS=28}" MinimumRadius="5"  EnableTooltip="True" 
+                              YBindingPath="Company"  SizeValuePath="Size" Stroke="Black" StrokeWidth="2"
+                              ItemsSource="{Binding MarketCapData}" 
+                              EnableAnimation="True">
+
+                <chart:BubbleSeries.TooltipTemplate>
+                    <DataTemplate>
+                        <Grid  BackgroundColor="Black">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid Grid.Row="0" Grid.Column="0" Margin="3,5,10,3">
+                                <HorizontalStackLayout HorizontalOptions="Center">
+
+                                    <Label Text="{Binding Item.Name}" FontSize="18" TextColor="White"  HorizontalTextAlignment="Center" Margin="0,0,0,0"/>
+                                </HorizontalStackLayout>
+                            </Grid>
+                            <BoxView Grid.Row="1" Grid.Column="0" VerticalOptions="Center" BackgroundColor="White"  HeightRequest="1" />
+
+                            <Grid Grid.Row="2" Grid.Column="0" Margin="3,5,10,3">
+                                <StackLayout>
+                                    <Label Text="{Binding Item.Gdp,StringFormat='GDP                         :  {0}  '}" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
+                                    <Label Text="{Binding Item.Company,StringFormat='Companies listed  :  {0}  '}" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
+                                    <Label Text="{Binding Item.Size,StringFormat='Market Cap            : € {0} B '}" TextColor="White" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+                    </DataTemplate>
+                </chart:BubbleSeries.TooltipTemplate>
+            </model:BubbleExt>
+        </chart:SfCartesianChart>
+    </Border>
+
+
+</ContentPage>
