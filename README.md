@@ -1,4 +1,4 @@
-# MAUI-Bubble-Chart-to-Visualize-Market-Cap-Distribution-by-Countries
+# MAUI Bubble Chart to Visualize Market Cap Distribution by Countries
 This sample demonstrates how to create a MAUI [Bubble Chart](https://www.syncfusion.com/maui-controls/maui-cartesian-charts/chart-types/maui-bubble-chart) using SfCartesianChart from Syncfusion Charts to analyze market capitalization distribution across multiple countries.
 
 One of the unique features of the **Bubble Chart** is its ability to effectively illustrate variations in market cap. For instance, the United States market, represented by the largest bubble, signifies its dominant position in terms of market capitalization, GDP, and number of companies. In contrast, a smaller bubble representing Vietnam highlights its status as an emerging market with a lower market cap, GDP, and fewer companies.

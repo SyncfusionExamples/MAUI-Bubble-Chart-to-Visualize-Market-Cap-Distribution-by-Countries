@@ -55,95 +55,138 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\Australia.png" />
 	  <None Remove="Resources\Images\australia1.png" />
+	  <None Remove="Resources\Images\Belgium.png" />
 	  <None Remove="Resources\Images\belgium1.png" />
+	  <None Remove="Resources\Images\Brazil.png" />
 	  <None Remove="Resources\Images\brazil1.png" />
+	  <None Remove="Resources\Images\Canada.png" />
 	  <None Remove="Resources\Images\canada1.png" />
+	  <None Remove="Resources\Images\Chile.png" />
 	  <None Remove="Resources\Images\chile1.png" />
+	  <None Remove="Resources\Images\china.png" />
 	  <None Remove="Resources\Images\china1.png" />
+	  <None Remove="Resources\Images\Denmark.png" />
 	  <None Remove="Resources\Images\denmark1.png" />
 	  <None Remove="Resources\Images\dotnet_bot.png" />
+	  <None Remove="Resources\Images\Finland.png" />
 	  <None Remove="Resources\Images\finland1.png" />
+	  <None Remove="Resources\Images\france.png" />
 	  <None Remove="Resources\Images\france1.png" />
+	  <None Remove="Resources\Images\Germany.png" />
 	  <None Remove="Resources\Images\germany1.png" />
 	  <None Remove="Resources\Images\hongkong1.png" />
+	  <None Remove="Resources\Images\india.png" />
 	  <None Remove="Resources\Images\india1.png" />
+	  <None Remove="Resources\Images\Indonesia.png" />
 	  <None Remove="Resources\Images\indonesia1.png" />
+	  <None Remove="Resources\Images\Iran.png" />
 	  <None Remove="Resources\Images\iran1.png" />
+	  <None Remove="Resources\Images\Israel.png" />
 	  <None Remove="Resources\Images\israel1.png" />
+	  <None Remove="Resources\Images\Italy.png" />
 	  <None Remove="Resources\Images\italy1.png" />
+	  <None Remove="Resources\Images\japan.png" />
 	  <None Remove="Resources\Images\japan1.png" />
+	  <None Remove="Resources\Images\Kuwait.png" />
+	  <None Remove="Resources\Images\Malaysia.png" />
 	  <None Remove="Resources\Images\malaysia1.png" />
+	  <None Remove="Resources\Images\Mexico.png" />
 	  <None Remove="Resources\Images\mexico1.png" />
+	  <None Remove="Resources\Images\Netherlands.png" />
 	  <None Remove="Resources\Images\netherlands1.png" />
+	  <None Remove="Resources\Images\Norway.png" />
 	  <None Remove="Resources\Images\norway1.png" />
+	  <None Remove="Resources\Images\Philippines.png" />
+	  <None Remove="Resources\Images\Poland.png" />
+	  <None Remove="Resources\Images\Qatar.png" />
+	  <None Remove="Resources\Images\Russia.png" />
 	  <None Remove="Resources\Images\russia1.png" />
+	  <None Remove="Resources\Images\SaudiArabia.png" />
 	  <None Remove="Resources\Images\saudiarabia1.png" />
+	  <None Remove="Resources\Images\Singapore.png" />
 	  <None Remove="Resources\Images\singapore1.png" />
+	  <None Remove="Resources\Images\SouthAfrica.png" />
 	  <None Remove="Resources\Images\southafrica1.png" />
+	  <None Remove="Resources\Images\SouthKorea.png" />
 	  <None Remove="Resources\Images\south_korea1.png" />
+	  <None Remove="Resources\Images\Spain.png" />
 	  <None Remove="Resources\Images\spain1.png" />
+	  <None Remove="Resources\Images\Sweden.png" />
 	  <None Remove="Resources\Images\sweden1.png" />
+	  <None Remove="Resources\Images\Switzerland.png" />
 	  <None Remove="Resources\Images\switzerland1.png" />
+	  <None Remove="Resources\Images\Taiwan.png" />
 	  <None Remove="Resources\Images\taiwan1.png" />
+	  <None Remove="Resources\Images\Thailand.png" />
 	  <None Remove="Resources\Images\thailand1.png" />
 	  <None Remove="Resources\Images\trend.png" />
+	  <None Remove="Resources\Images\Turkey.png" />
 	  <None Remove="Resources\Images\turkey1.png" />
 	  <None Remove="Resources\Images\uae1.png" />
 	  <None Remove="Resources\Images\uk1.png" />
+	  <None Remove="Resources\Images\UnitedArabEmirates.png" />
+	  <None Remove="Resources\Images\UnitedKingdom.png" />
+	  <None Remove="Resources\Images\UnitedStates.png" />
 	  <None Remove="Resources\Images\us1.png" />
+	  <None Remove="Resources\Images\Vietnam.png" />
 	  <None Remove="Resources\Images\vietnam1.png" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Include="Resources\Images\us1.png" />
+	  <EmbeddedResource Include="Resources\Images\Canada.png" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Include="Resources\Images\australia1.png" />
-	  <EmbeddedResource Include="Resources\Images\belgium1.png" />
-	  <EmbeddedResource Include="Resources\Images\brazil1.png" />
-	  <EmbeddedResource Include="Resources\Images\canada1.png" />
-	  <EmbeddedResource Include="Resources\Images\chile1.png" />
-	  <EmbeddedResource Include="Resources\Images\china1.png" />
-	  <EmbeddedResource Include="Resources\Images\denmark1.png" />
-	  <EmbeddedResource Include="Resources\Images\dotnet_bot.png" />
-	  <EmbeddedResource Include="Resources\Images\finland1.png" />
-	  <EmbeddedResource Include="Resources\Images\france1.png" />
-	  <EmbeddedResource Include="Resources\Images\germany1.png" />
-	  <EmbeddedResource Include="Resources\Images\hongkong1.png" />
-	  <EmbeddedResource Include="Resources\Images\india1.png" />
-	  <EmbeddedResource Include="Resources\Images\indonesia1.png" />
-	  <EmbeddedResource Include="Resources\Images\iran1.png" />
-	  <EmbeddedResource Include="Resources\Images\israel1.png" />
-	  <EmbeddedResource Include="Resources\Images\italy1.png" />
-	  <EmbeddedResource Include="Resources\Images\japan1.png" />
-	  <EmbeddedResource Include="Resources\Images\malaysia1.png" />
-	  <EmbeddedResource Include="Resources\Images\mexico1.png" />
-	  <EmbeddedResource Include="Resources\Images\netherlands1.png" />
-	  <EmbeddedResource Include="Resources\Images\norway1.png" />
-	  <EmbeddedResource Include="Resources\Images\russia1.png" />
-	  <EmbeddedResource Include="Resources\Images\saudiarabia1.png" />
-	  <EmbeddedResource Include="Resources\Images\singapore1.png" />
-	  <EmbeddedResource Include="Resources\Images\southafrica1.png" />
-	  <EmbeddedResource Include="Resources\Images\south_korea1.png" />
-	  <EmbeddedResource Include="Resources\Images\spain1.png" />
-	  <EmbeddedResource Include="Resources\Images\sweden1.png" />
-	  <EmbeddedResource Include="Resources\Images\switzerland1.png" />
-	  <EmbeddedResource Include="Resources\Images\taiwan1.png" />
-	  <EmbeddedResource Include="Resources\Images\thailand1.png" />
-	  <EmbeddedResource Include="Resources\Images\trend.png" />
-	  <EmbeddedResource Include="Resources\Images\turkey1.png" />
-	  <EmbeddedResource Include="Resources\Images\uae1.png" />
-	  <EmbeddedResource Include="Resources\Images\uk1.png" />
-	  <EmbeddedResource Include="Resources\Images\vietnam1.png" />
+	  <EmbeddedResource Include="Resources\Images\Australia.png" />
+	  <EmbeddedResource Include="Resources\Images\Belgium.png" />
+	  <EmbeddedResource Include="Resources\Images\Brazil.png" />
+	  <EmbeddedResource Include="Resources\Images\Chile.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Images\China.png" />
+	  <EmbeddedResource Include="Resources\Images\Denmark.png" />
+	  <EmbeddedResource Include="Resources\Images\Finland.png" />
+	  <EmbeddedResource Include="Resources\Images\France.png" />
+	  <EmbeddedResource Include="Resources\Images\Germany.png" />
+	  <EmbeddedResource Include="Resources\Images\India.png" />
+	  <EmbeddedResource Include="Resources\Images\Indonesia.png" />
+	  <EmbeddedResource Include="Resources\Images\Iran.png" />
+	  <EmbeddedResource Include="Resources\Images\Israel.png" />
+	  <EmbeddedResource Include="Resources\Images\Italy.png" />
+	  <EmbeddedResource Include="Resources\Images\Japan.png" />
+	  <EmbeddedResource Include="Resources\Images\Kuwait.png" />
+	  <EmbeddedResource Include="Resources\Images\Malaysia.png" />
+	  <EmbeddedResource Include="Resources\Images\Mexico.png" />
+	  <EmbeddedResource Include="Resources\Images\Netherlands.png" />
+	  <EmbeddedResource Include="Resources\Images\Norway.png" />
+	  <EmbeddedResource Include="Resources\Images\Philippines.png" />
+	  <EmbeddedResource Include="Resources\Images\Poland.png" />
+	  <EmbeddedResource Include="Resources\Images\Qatar.png" />
+	  <EmbeddedResource Include="Resources\Images\Russia.png" />
+	  <EmbeddedResource Include="Resources\Images\SaudiArabia.png" />
+	  <EmbeddedResource Include="Resources\Images\Singapore.png" />
+	  <EmbeddedResource Include="Resources\Images\SouthAfrica.png" />
+	  <EmbeddedResource Include="Resources\Images\SouthKorea.png" />
+	  <EmbeddedResource Include="Resources\Images\Spain.png" />
+	  <EmbeddedResource Include="Resources\Images\Sweden.png" />
+	  <EmbeddedResource Include="Resources\Images\Switzerland.png" />
+	  <EmbeddedResource Include="Resources\Images\Taiwan.png" />
+	  <EmbeddedResource Include="Resources\Images\Thailand.png" />
+	  <EmbeddedResource Include="Resources\Images\Turkey.png" />
+	  <EmbeddedResource Include="Resources\Images\UnitedArabEmirates.png" />
+	  <EmbeddedResource Include="Resources\Images\UnitedKingdom.png" />
+	  <EmbeddedResource Include="Resources\Images\UnitedStates.png" />
+	  <EmbeddedResource Include="Resources\Images\Vietnam.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
-		<PackageReference Include="Syncfusion.Maui.Charts" Version="27.1.52" />
+		<PackageReference Include="Syncfusion.Maui.Charts" Version="*" />
 	</ItemGroup>
 
 </Project>
