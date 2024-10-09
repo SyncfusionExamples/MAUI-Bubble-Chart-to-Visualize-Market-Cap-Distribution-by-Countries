@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using IImage = Microsoft.Maui.Graphics.IImage;
 
 namespace MarketCap 
 {
     public class MarketCapModel
     {
         public string Name { get; set; }
-        public Microsoft.Maui.Graphics.IImage? ImageIcon { get; set; }
+        public IImage? ImageIcon { get; set; }
         public double Company { get; set; }
         public double Size { get; set; }
         public double Gdp { get; set; }

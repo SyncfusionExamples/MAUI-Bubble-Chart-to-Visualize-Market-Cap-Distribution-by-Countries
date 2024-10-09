@@ -55,6 +55,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiAsset Remove="Resources\Raw\MarketData.csv" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Images\Australia.png" />
 	  <None Remove="Resources\Images\australia1.png" />
 	  <None Remove="Resources\Images\Belgium.png" />
@@ -180,6 +184,7 @@
 	  <EmbeddedResource Include="Resources\Images\UnitedKingdom.png" />
 	  <EmbeddedResource Include="Resources\Images\UnitedStates.png" />
 	  <EmbeddedResource Include="Resources\Images\Vietnam.png" />
+	  <EmbeddedResource Include="Resources\Raw\MarketData.csv" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -188,5 +193,6 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 		<PackageReference Include="Syncfusion.Maui.Charts" Version="*" />
 	</ItemGroup>
+
 
 </Project>
