@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketCap", "MarketCap\MarketCap.csproj", "{656EBEEF-D57A-439E-88BD-2C81A9D8AB2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{656EBEEF-D57A-439E-88BD-2C81A9D8AB2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{656EBEEF-D57A-439E-88BD-2C81A9D8AB2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{656EBEEF-D57A-439E-88BD-2C81A9D8AB2B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{656EBEEF-D57A-439E-88BD-2C81A9D8AB2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{656EBEEF-D57A-439E-88BD-2C81A9D8AB2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{656EBEEF-D57A-439E-88BD-2C81A9D8AB2B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0714E7C7-5290-45B6-BC11-E0EF41C9A7E0}
+	EndGlobalSection
+EndGlobal
